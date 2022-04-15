@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+:root {
+  --poppins-headings: "Poppins", sans-serif;
+  --sans-body: "Open Sans", sans-serif;
+
+  --violet: hsl(257, 40%, 49%);
+  --soft-magenta: hsl(300, 69%, 71%);
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(/images/bg-mobile.svg);
+  background-color: var(--violet);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+main {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 2em;
+}
+img {
+  max-width: 100%;
+}
+h1 {
+  font-size: 1.7rem;
+  font-family: var(--poppins-headings);
+  color: #ffffff;
+
+  padding-top: 2.2em;
+  padding-bottom: 0.5em;
+}
+p {
+  font-family: var(--sans-body);
+  font-size: 16px;
+  color: #ffffff;
+  padding-bottom: 1.6em;
+  line-height: 1.6;
+}
+button {
+  font-size: 0.8rem;
+  padding: 1em 6em;
+  border-radius: 100px;
+  color: var(--violet);
+}
+button:hover {
+  color: white;
+  cursor: pointer;
+  background-color: var(--soft-magenta);
+}
+
+.logo-huddle {
+  width: 40%;
+  padding-bottom: 3.6em;
+}
+.fa-brands {
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 0 auto;
+  width: 2em;
+  height: 2em;
+  padding-top: 0.5em;
+  color: white;
+  margin-left: 0.4em;
+}
+.icons {
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.fa-brands:hover {
+  color: var(--soft-magenta);
+  border-color: var(--soft-magenta);
+}
+
+@media (min-width: 850px) {
+  body {
+    background-image: url(/images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 86vw 100vh;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  main {
+    display: flex;
+    gap: 4em;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 2.4rem;
+    margin-top: 2em;
+    text-align: left;
+  }
+  p {
+    font-size: 1rem;
+    text-align: left;
+  }
+  section {
+    width: 50%;
+    margin-top: 2em;
+  }
+  button {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1em 5em;
+  }
+  .logo-huddle {
+    width: 30%;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+  }
+  .icons {
+    text-align: right;
+    margin-right: 9em;
+    padding-left: 1em;
+    margin-top: 6em;
+  }
+  .fa-brands {
+    padding-top: 7px;
+    padding-right: 8px;
+  }
+}
